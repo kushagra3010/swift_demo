@@ -35,6 +35,7 @@ class DemoOBJCTests: XCTestCase {
     func testGetUserName() {
         let user:User = User()
         let username = user.getFullName()
+        XCTAssertNotNil(username)
         XCTAssertEqual(username, "username")
     }
     
