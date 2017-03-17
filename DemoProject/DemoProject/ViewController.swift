@@ -24,9 +24,18 @@ class ViewController: UIViewController {
     }
     
     func validate() -> String? {
-        guard self.txtEmail.text == nil else {
+        let trimEmail: String? = self.txtEmail.text?.trimmingCharacters(in: CharacterSet(charactersIn: " "))
+        guard (trimEmail?.lengthOfBytes(using: .utf8))! > 0 else {
             return "Please enter email"
         }
+        let trimPass: String? = self.txtPassword.text?.trimmingCharacters(in: CharacterSet(charactersIn: " "))
+        guard (trimPass?.lengthOfBytes(using: .utf8))! > 0 else {
+            return "Please enter password"
+        }
+        guard (trimEmail?.isValidEmail())! else {
+            return "Please enter valid email"
+        }
+        
         return nil
     }
 
@@ -34,17 +43,31 @@ class ViewController: UIViewController {
         
         let errorMesage: String? = validate()
         if errorMesage == nil {
-            
+            let alertCon = UIAlertController(title: "Alert",
+                                             message: "Login validation pass"
+                , preferredStyle: .alert)
+            alertCon.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default ,
+                                             handler:nil))
+            self.present(alertCon, animated: true, completion: nil)
         } else {
             let alertCon = UIAlertController(title: "Alert",
                                              message: errorMesage
                 , preferredStyle: .alert)
             alertCon.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default ,
                                              handler: { (action) in
-                                                self.txtEmail.becomeFirstResponder();
             }))
             self.present(alertCon, animated: true, completion: nil)
         }
     }
 }
 
+
+extension String {
+    func isValidEmail() -> Bool {
+        // print("validate calendar: \(testStr)")
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: self)
+    }
+}
