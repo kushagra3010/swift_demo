@@ -5,9 +5,16 @@ import UIKit
 // String Manipulation
 var string1 = "Hello"
 string1 += " Swift "
-let char:Character = "😀"
+let char:Character = "a"
 string1.append(char);
 string1.characters.count
+
+//String Concatenating
+
+let string2 = " there"
+var welcome = string1 + string2
+var instruction = "look over"
+instruction += string2
 
 // String Interpolation
 let vegetables = 5
@@ -17,25 +24,9 @@ var floatN:Float = 2.345
 var str = "\(floatN)"
 var str2 = String(format: "%0.1f", floatN)
 
-//Working with characters / Unicode
-let characters = "Dog!🐶😀"
-
-// Different representation of string
-print("")
-for character in characters.characters {
-    print("\(character) ", terminator: "")
+//Working with characters
+for character in "Dog!".characters {
+    print(character)
 }
-
-print("")
-for codeUnit in characters.utf8 {
-    print("\(codeUnit) ", terminator: "")
-}
-
-print("")
-for codeUnit in characters.utf16 {
-    print("\(codeUnit) ", terminator: "")
-    var char = codeUnit
-}
-
 
 
