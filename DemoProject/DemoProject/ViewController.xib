@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="DemoProject" customModuleProvider="target">
+            <connections>
+                <outlet property="txtEmail" destination="nOT-Yp-WLd" id="tRG-iQ-V64"/>
+                <outlet property="txtPassword" destination="dpS-6W-hjT" id="GVj-xM-1Pf"/>
+                <outlet property="view" destination="SQ7-9f-fQT" id="xsN-5r-8MP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SQ7-9f-fQT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nOT-Yp-WLd">
+                    <rect key="frame" x="20" y="50" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5d-GD-5Vn">
+                    <rect key="frame" x="168" y="140" width="38" height="30"/>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="btnLoginClicked:" destination="-1" eventType="touchUpInside" id="a1O-nM-uCa"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpS-6W-hjT">
+                    <rect key="frame" x="20" y="100" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="B5d-GD-5Vn" firstAttribute="centerX" secondItem="SQ7-9f-fQT" secondAttribute="centerX" id="I8A-tW-vnB"/>
+                <constraint firstItem="dpS-6W-hjT" firstAttribute="centerX" secondItem="SQ7-9f-fQT" secondAttribute="centerX" id="IP3-sd-48W"/>
+                <constraint firstItem="dpS-6W-hjT" firstAttribute="leading" secondItem="SQ7-9f-fQT" secondAttribute="leading" constant="20" id="IYd-iZ-avC"/>
+                <constraint firstAttribute="trailing" secondItem="nOT-Yp-WLd" secondAttribute="trailing" constant="20" id="ThO-5D-4L0"/>
+                <constraint firstItem="nOT-Yp-WLd" firstAttribute="centerX" secondItem="SQ7-9f-fQT" secondAttribute="centerX" id="U9W-PX-R7e"/>
+                <constraint firstItem="dpS-6W-hjT" firstAttribute="top" secondItem="nOT-Yp-WLd" secondAttribute="bottom" constant="20" id="dpb-Qd-rO0"/>
+                <constraint firstAttribute="trailing" secondItem="dpS-6W-hjT" secondAttribute="trailing" constant="20" id="iYv-wv-het"/>
+                <constraint firstItem="nOT-Yp-WLd" firstAttribute="leading" secondItem="SQ7-9f-fQT" secondAttribute="leading" constant="20" id="kH5-Qb-mS9"/>
+                <constraint firstItem="B5d-GD-5Vn" firstAttribute="top" secondItem="dpS-6W-hjT" secondAttribute="bottom" constant="10" id="tDP-PD-L2A"/>
+                <constraint firstItem="nOT-Yp-WLd" firstAttribute="top" secondItem="SQ7-9f-fQT" secondAttribute="top" constant="50" id="xxW-MV-HaC"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

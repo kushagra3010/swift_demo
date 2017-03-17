@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Push View Controller'/>
+        <page name='Animated Buttons'/>
+        <page name='Gesture Recognizer'/>
+        <page name='Text Input'/>
+        <page name='SpriteKit'/>
+        <page name='Spring Animation'/>
+        <page name='Responder Chain'/>
+    </pages>
+</playground>
