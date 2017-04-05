@@ -1,8 +1,9 @@
 //: Playground - noun: a place where people can play
 
 // Default : Non Optional
-var x = 49
+var x: Int = 49
 x = x + 1
+
 
 // Optional
 var y:Int? = 50

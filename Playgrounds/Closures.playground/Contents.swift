@@ -11,7 +11,6 @@ var reversedNames1 = names.sorted(by:{
     return s1 > s2
 })
 
-// returns 10.0, which is the arithmetic mean of these three numbers
 var reversedNames2 = names.sorted(by: { s1, s2 in return s1 > s2 } )
 
 var reversedName3 = names.sorted(by: {$0 > $1})

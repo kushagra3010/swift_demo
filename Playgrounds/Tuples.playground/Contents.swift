@@ -34,8 +34,8 @@ result.substraction
 // Iterate through dictionary
 var dict = [1:"One", 2:"Two", 3:"Three"]
 
-for (key, value) in dict {
-    print("\(value)")
+for x in dict {
+    print("\(x.value)")
 }
 
 

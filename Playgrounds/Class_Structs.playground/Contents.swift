@@ -4,15 +4,16 @@ import UIKit
 
 // Classes
 class Person {
-    let personID:Int;
+    let personID:Int?;
     let panCardNo:String = "CA******90J"
     var name: String = "No Name"
     var x:Int=10
-    var y:Int=10
-    var total:Int {
-        get {
-            return x + y;
+    var y:Int=10 {
+        willSet {
         }
+    }
+    var total:Int {
+        return x + y;
     }
     
     /*
