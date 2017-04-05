@@ -149,7 +149,7 @@
 				TargetAttributes = {
 					738452C91E7AC3880058BCBD = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 7S9S5W2PHB;
+						DevelopmentTeam = UQE8R253HH;
 						ProvisioningStyle = Automatic;
 					};
 					738452E41E7AC9800058BCBD = {
@@ -342,10 +342,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7S9S5W2PHB;
+				DEVELOPMENT_TEAM = UQE8R253HH;
 				INFOPLIST_FILE = DemoProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kushagra.DemoProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishisystems.DemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -355,10 +355,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7S9S5W2PHB;
+				DEVELOPMENT_TEAM = UQE8R253HH;
 				INFOPLIST_FILE = DemoProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kushagra.DemoProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishisystems.DemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
